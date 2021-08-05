@@ -1,19 +1,13 @@
 /*!
-
 =========================================================
 * Argon Design System React - v1.1.0
 =========================================================
-
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2020 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
-
 * Coded by Creative Tim
-
 =========================================================
-
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 */
 import React from "react";
 import ReactDOM from "react-dom";
@@ -32,22 +26,17 @@ import Register from "views/examples/Register.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
-      <Route
-        path="/landing-page"
-        exact
-        render={props => <Landing {...props} />}
-      />
-      <Route path="/login-page" exact render={props => <Login {...props} />} />
+      <Route path="/" exact render={props => <Profile {...props} />} />
       <Route
         path="/profile-page"
         exact
         render={props => <Profile {...props} />}
       />
+      <Route path="/" exact render={props => <Profile {...props} />} />
       <Route
-        path="/register-page"
+        path="/landing-page"
         exact
-        render={props => <Register {...props} />}
+        render={props => <Landing {...props} />}
       />
       <Redirect to="/" />
     </Switch>

@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
@@ -27,7 +10,6 @@ import {
   DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
-  Media,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -75,10 +57,7 @@ class DemoNavbar extends React.Component {
           >
             <Container>
               <NavbarBrand className="mr-lg-3" to="/" tag={Link}>
-                <img
-                  alt="..."
-                  src={reactWhite}
-                />
+                <h5 className="text-white">Moayad Alhaj</h5>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -94,10 +73,7 @@ class DemoNavbar extends React.Component {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                        <img
-                          alt="..."
-                          src={argonReact}
-                        />
+                        <h4>Moayad Alhaj</h4>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
@@ -166,7 +142,7 @@ class DemoNavbar extends React.Component {
                     >
                       <i className="fa fa-linkedin-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Twitter
+                        Linkedin
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698704">
